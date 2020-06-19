@@ -1,0 +1,160 @@
+.selectorButton {
+  display: inline-block;
+  padding: 16px 28px;
+  border: 2px black solid;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background: white;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out;
+  z-index: 1;
+  border-radius: 0px;
+}
+.selectorButton:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(221, 73, 73);
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+  z-index: -1;
+}
+.selectorButtonOn:before {
+  -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
+}
+/* .swipe-fill--down:before {
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+}
+.swipe-fill--left:before {
+  -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+}
+.swipe-fill--right:before {
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+} */
+.selectorButton:hover {
+  color: white;
+  /* border: 2px black solid; */
+}
+.selectorButton:hover:before {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.button-container a {
+  margin: 0 10px;
+}
+
+
+/* .selectionLink{
+  text-decoration: none;
+}
+
+.selectionLink:visited{
+color: white;
+text-decoration-line: none;
+} */
+
+.bsefs{
+  background-color: rgb(221, 73, 73);
+}
+
+.randomTeaType{
+  margin-top: 10px;
+  background-image: linear-gradient(to right, rgb(137, 14, 168), red);
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent;  */
+  -webkit-background-clip: border-box;
+  color: #ffffff;
+  
+}
+
+.firstHeader{
+  margin-top: 0px;
+}
+
+.discoveryLink {
+  display:inline-block;
+  padding:0.46em 1.6em;
+  border:0.1em solid #000000;
+  margin:0 0.2em 0.2em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#ffffff;
+  text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+  background-color:#0051a1;
+  text-align:center;
+  transition: all 0.15s;
+}
+
+
+.teaType0{
+  background-color: black;
+  color: white;
+  margin: 10px;
+}
+.teaType1{
+  background-color: green;
+  color: black;
+  margin: 10px;
+}
+.teaType2{
+  background-color: orange;
+  color: rgb(16, 7, 143);
+  margin: 10px;
+}
+.teaType3{
+  background-color: rgb(80, 1, 1);
+  color: rgb(131, 151, 133);
+  margin: 10px;
+}
+.teaType4{
+  background-color: rgb(21, 88, 0);
+  color: white;
+  margin: 10px;
+}
+
+.caffeineType0{
+  margin: 10px;
+  background-color: #8B4513;
+  color: #47a9c2;
+}
+
+.caffeineType1{
+  margin: 10px;
+  background-color: #47a9c2;
+  color: #8B4513;
+}
+
+.tasteType0{
+  background-color: black;
+  color: white;
+  margin: 10px;
+}
+.tasteType1{
+  background-color: white;
+  color: black;
+  margin: 10px;
+}
+
+@media screen and (min-width: 768px){
+ 
+  .firstHeader{
+    margin-top: 60px;
+  }
+
+}

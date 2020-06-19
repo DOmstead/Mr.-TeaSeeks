@@ -1,0 +1,32 @@
+.AddTeaClipping__form label {
+  margin-top: 10px;
+}
+
+.AddTeaClipping__buttons {
+  text-align: center;
+}
+
+.AddTeaClipping__error p {
+  color: #a51414;
+  margin-bottom: 5px;
+}
+
+.AddTeaClipping__required {
+  color: #a51414;
+}
+
+.AddTeaClipping__form {
+  text-align: left;
+}
+
+.AddTeaClipping__form input,
+.AddTeaClipping__form textarea {
+  display: block;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  /* minus side padding and border */
+  width: calc(100% - 16px - 2px);
+  padding: 5px 8px;
+  border: 1px solid #ddd;
+}

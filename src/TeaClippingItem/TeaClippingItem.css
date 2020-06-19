@@ -1,0 +1,34 @@
+.TeaClippingItem__title a {
+  color: #263596;
+}
+
+.TeaClippingItem__description {
+  text-align: left;
+  margin: 4px 0;
+}
+
+.TeaClippingItem__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.TeaClippingItem {
+  padding: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 1px 1px rgba(0,0,0,0.2);
+}
+
+.TeaClippingItem__buttons {
+  font-size: .8em;
+  text-align: right;
+}
+
+.AddTeaClippingItem__required {
+  color: #b00c0c;
+}
+
+.TeaClippingItem__title {
+  margin: 0 0 5px;
+}
+
+
