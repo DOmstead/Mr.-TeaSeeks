@@ -13,7 +13,7 @@ import config from './config';
 import './App.css';
 
 
-//This component is the main componenet of this program, and is therefore named app
+//This component is the main component of this program, and is therefore named app
 //in keeping with industry best practices. 
 class App extends Component {
 
@@ -21,7 +21,7 @@ class App extends Component {
 
   state = {
     //This is all records, followed by the three things a user chooses. 
-    teaClippings: TeaClippingsDatabase || localStorage.getItem('teaClippings'),
+    teaClippings: [] || localStorage.getItem('teaClippings'),
     teaTypeSelected: localStorage.getItem('teaTypeSelected') || "",
     caffeineTypeSelected: localStorage.getItem('caffeineTypeSelected') || "",
     tasteTypeSelected: localStorage.getItem('tasteTypeSelected') || "",
@@ -86,27 +86,27 @@ class App extends Component {
   }
 
 
-  //This fetch call will run once the Api is setup. It is placed here so you ahve a better view of the overall flow of the app
-  // componentDidMount() {
-  //   fetch(config.API_ENDPOINT, {
-  //     method: 'GET',
-  //     headers: {
-  //       'content-type': 'application/json',
-  //       'Authorization': `Bearer ${config.API_KEY}`
-  //     }
-  //   })
-  //     .then(res => {
-  //       if (!res.ok) {
-  //         return res.json().then(error => Promise.reject(error))
-  //       }
-  //       return res.json()
-  //     })
-  //     .then(this.setTeaClippings)
-  //     .catch(error => {
-  //       console.error(error)
-  //       this.setState({ error })
-  //     })
-  // }
+//  This API call happens when our app first loads, grabbing us all the data we need. 
+  componentDidMount() {
+    fetch(config.API_ENDPOINT, {
+      method: 'GET',
+      headers: {
+        'content-type': 'application/json',
+        'Authorization': `Bearer ${config.API_KEY}`
+      }
+    })
+      .then(res => {
+        if (!res.ok) {
+          return res.json().then(error => Promise.reject(error))
+        }
+        return res.json()
+      })
+      .then(this.setTeaClippings)
+      .catch(error => {
+        console.error(error)
+        this.setState({ error })
+      })
+  }
 
 
 

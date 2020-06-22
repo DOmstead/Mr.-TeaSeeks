@@ -13,7 +13,7 @@ import keemun_lupin_black_tea_2 from '../Images/keemun_lupin_black_tea_2.jpg'
 
 
 
-//This componenet is responsible for displaying the tea clipping that meet the criteria previously chosen by the user. 
+//This component is responsible for displaying the tea clipping that meet the criteria previously chosen by the user. 
 
 class TeaDiscovery extends Component {
 

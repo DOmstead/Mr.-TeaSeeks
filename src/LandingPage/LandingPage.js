@@ -14,16 +14,13 @@ import  '../../node_modules/react-image-carousel/lib/css/main.min.css'
 
 
 
-//This component is the first thing a user sees when they go to this app. 
+// This component is the first thing a user sees when they go to this app. 
 // It is rendered on the '/' path, and serves as an introduction to what this app does
 // and why a user may wish to use it.
 
 class LandingPage extends Component {
 
 images = [
-  // matcha_holidays,
-  // light_tea_with_milk,
-  // phoenix_rising_tea,
   black_tea_leaf_landscape,
   huron_gold_needle,
   matcha_wisk_with_water,

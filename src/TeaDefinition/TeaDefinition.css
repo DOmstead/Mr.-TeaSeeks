@@ -31,21 +31,10 @@
   -webkit-transform: translate3d(0, 100%, 0);
           transform: translate3d(0, 100%, 0);
 }
-/* .swipe-fill--down:before {
-  -webkit-transform: translate3d(0, -100%, 0);
-          transform: translate3d(0, -100%, 0);
-}
-.swipe-fill--left:before {
-  -webkit-transform: translate3d(-100%, 0, 0);
-          transform: translate3d(-100%, 0, 0);
-}
-.swipe-fill--right:before {
-  -webkit-transform: translate3d(100%, 0, 0);
-          transform: translate3d(100%, 0, 0);
-} */
+
 .selectorButton:hover {
   color: white;
-  /* border: 2px black solid; */
+
 }
 .selectorButton:hover:before {
   -webkit-transform: translate3d(0, 0, 0);
@@ -56,16 +45,6 @@
   margin: 0 10px;
 }
 
-
-/* .selectionLink{
-  text-decoration: none;
-}
-
-.selectionLink:visited{
-color: white;
-text-decoration-line: none;
-} */
-
 .bsefs{
   background-color: rgb(221, 73, 73);
 }
@@ -73,8 +52,6 @@ text-decoration-line: none;
 .randomTeaType{
   margin-top: 10px;
   background-image: linear-gradient(to right, rgb(137, 14, 168), red);
-  /* -webkit-background-clip: text; */
-  /* -webkit-text-fill-color: transparent;  */
   -webkit-background-clip: border-box;
   color: #ffffff;
   

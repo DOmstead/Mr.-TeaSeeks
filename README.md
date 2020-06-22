@@ -2,7 +2,7 @@
 
 ## I'm Mr. TeaSeeks, Look at me! Let me help you find your tea!
 
- Sometimes when contemplating the infinite cosmos, or thinking about my next cup of tea, I find myself questioning what I really want. Do I want a tea that will help wake me up? One that lulls me to sleep? Perhaps even something strong and bitter! With so many types of tea to choose from, it is hard to know which of these is right, even when I do know what I want! That is where Mr. TeaSeeks comes in. By utilizing React, CSS, Node, Express, and PostgreSQL we create a full stack app that allows users to simply indicate what type of tea they are looking for (something to calm their nerves, or maybe something to help wake them up), and Mr. TeaSeeks will tell them the perfect type of tea. Is it a nice black Oolong, the perfect Pu-erh, or a spearmint infused blend? Mr. TeaSeeks knows, and now you can too! 
+ Sometimes when contemplating the infinite cosmos, or thinking about my next cup of tea, I find myself questioning what I really want. Do I want a tea that will help wake me up? One that lulls me to sleep? Perhaps even something strong and bitter! With so many types of tea to choose from, it is hard to know which of these is right, even when I do know what I want! That is where Mr. TeaSeeks comes in. By utilizing HTML5, CSS3, Javascript, React, Node, Express, and PostgreSQL, and RestfulAPI principles we create a full stack app that allows users to simply indicate what type of tea they are looking for (something to calm their nerves, or maybe something to help wake them up), and Mr. TeaSeeks will tell them the perfect type of tea. Is it a nice black Oolong, the perfect Pu-erh, or a spearmint infused blend? Mr. TeaSeeks knows, and now you can too! 
 
  ### Live Link:
 

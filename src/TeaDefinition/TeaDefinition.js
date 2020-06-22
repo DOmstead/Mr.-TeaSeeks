@@ -44,21 +44,18 @@ class TeaDefinition extends Component {
     this.setState({ teaTypeSelected: value })
     localStorage.setItem('teaTypeSelected', value)
     this.context.setTeaTypeSelection(value);
-    console.log(this.state.teaTypeSelected)
   };
 
   setCaffeineType = value => {
     this.setState({ caffeineTypeSelected: value })
     localStorage.setItem('caffeineTypeSelected', value)
     this.context.setCaffeineSelection(value);
-    console.log(this.state.caffeineTypeSelected)
   };
 
   setTasteType = value => {
     this.setState({ tasteTypeSelected: value })
     localStorage.setItem('tasteTypeSelected', value)
     this.context.setTasteTypeSelection(value)
-    console.log(this.state.tasteTypeSelected)
     
   };
 

@@ -1,6 +1,4 @@
 .App {
-  /* background-color: #85dcb1;
-  background-color: #c38d9e; */
   background-color: #41B3A3;
   min-height: 100vh;
   display: flex;
@@ -11,7 +9,6 @@
   color: aliceblue ;
   text-align: center;
   height: 100%;
-  /* margin: 10px auto; */
   padding: 5px;
   text-align: center;
 }
