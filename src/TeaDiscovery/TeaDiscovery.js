@@ -3,12 +3,12 @@ import TeaClippingsContext from '../TeaClippingsContext';
 import { Link } from 'react-router-dom';
 import './TeaDiscovery.css';
 import seedrandom from 'seedrandom';
-import black_tea_leaf_landscape from '../Images/black_tea_leaf_landscape.jpg'
-import matcha_wisk_with_water from '../Images/matcha_wisk_with_water.jpg'
-import buddhaTears from '../Images/buddhaTears.jpg'
-import mandalaNobleMark from '../Images/mandalaNobleMark.jpg'
-import hmxinyangmaojian from '../Images/hmxinyangmaojian.jpg'
-import keemun_lupin_black_tea_2 from '../Images/keemun_lupin_black_tea_2.jpg'
+import black_tea_leaf_landscape from '../Images/black_tea_leaf_landscape.jpg';
+import matcha_wisk_with_water from '../Images/matcha_wisk_with_water.jpg';
+import buddhaTears from '../Images/buddhaTears.jpg';
+import mandalaNobleMark from '../Images/mandalaNobleMark.jpg';
+import hmxinyangmaojian from '../Images/hmxinyangmaojian.jpg';
+import keemun_lupin_black_tea_2 from '../Images/keemun_lupin_black_tea_2.jpg';
 
 
 
@@ -36,7 +36,7 @@ class TeaDiscovery extends Component {
   this.clippingSelector()
   this.imageSelected()
   window.scrollTo(0, 0)
-  }
+  };
 
   
   //This function runs through the tea clippings available based off the criteria chosen by the user. 
@@ -57,7 +57,7 @@ class TeaDiscovery extends Component {
         this.setState({clippingSelected: clippingsSelected[0]})
         localStorage.setItem('clippingSelected', clippingsSelected[0])
         this.context.setTeaSelected(clippingsSelected[this.state.indexShown])
-  } 
+  };
 
   //This function runs through the various teas that have met the requirements the user selected.
   changeindexShown = () => {
@@ -70,8 +70,8 @@ class TeaDiscovery extends Component {
       this.setState({indexShown: 0})
       this.context.setTeaSelected(this.state.clippingsSelected[0])
       localStorage.setItem('indexShown', 0)
-    }
-  }
+    };
+  };
 
   
 
@@ -85,7 +85,7 @@ class TeaDiscovery extends Component {
     "temp": "165",
     "brew_time": "8 - 15",
     "image": "mandelaMasala.jpg"
-  } 
+  }; 
 
   imageOptions = [
     black_tea_leaf_landscape,
@@ -94,7 +94,7 @@ class TeaDiscovery extends Component {
     mandalaNobleMark,
     hmxinyangmaojian,
     keemun_lupin_black_tea_2
-  ]
+  ];
 
 
   seedrandom = require('seedrandom');
@@ -105,8 +105,8 @@ class TeaDiscovery extends Component {
     for(let i=0; i < this.imageOptions.length; i++){
       this.setState({imageSelected: this.imageOptions[imagePosition] })
       localStorage.setItem('imageSelected', this.imageOptions[imagePosition] )
-  }
-}
+  };
+};
    
   //This section renders the end user interface for this component.  
   render() {
@@ -134,8 +134,8 @@ class TeaDiscovery extends Component {
         </div>
           </section>
       );
-    }
-  }
+    };
+  };
     
   export default TeaDiscovery;
 

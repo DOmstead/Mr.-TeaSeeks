@@ -11,4 +11,4 @@ export default function Nav(props) {
       </Link>
     </nav>
   );
-}
+};

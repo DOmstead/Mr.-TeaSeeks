@@ -64,7 +64,7 @@ class TeaDefinition extends Component {
     this.setState({teaTypeSelected: this.state.validTeaTypes[randomIndex]})
     localStorage.setItem('teaTypeSelected', this.state.validTeaTypes[randomIndex])
     this.context.setTeaTypeSelection(this.state.validTeaTypes[randomIndex]);
-  }
+  };
 
   teaTypeButtons() {
     let teaType = this.state.validTeaTypes;
@@ -84,7 +84,7 @@ class TeaDefinition extends Component {
         }
       </div>
     );
-  }
+  };
 
   caffeineTypeButtons() {
     let caffeineType = this.state.validCaffeineTypes;
@@ -104,7 +104,7 @@ class TeaDefinition extends Component {
         }
       </div>
     );
-  }
+  };
 
   tasteTypeButtons() {
     let tasteType = this.state.validTasteTypes;
@@ -124,17 +124,17 @@ class TeaDefinition extends Component {
         }
       </div>
     );
-  }
+  };
 
   //Do you like starting in the middle of a page? No right? Neither do most users! This makes sure you start at the top. 
 componentDidMount(){
   window.scrollTo(0, 0)
-}
+};
   
   //This function prevents the default submit action, allowing our buttons to not reload the page on each click.
   handleSubmit = e => {
     e.preventDefault()
-  }
+  };
 
   //This section renders the end user interface for this component.
     render() {
@@ -167,7 +167,7 @@ componentDidMount(){
         </form>
       </section>
     );
-  }
-}
+  };
+};
 
 export default TeaDefinition;

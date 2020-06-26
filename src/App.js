@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import LandingPage from './LandingPage/LandingPage'
+import LandingPage from './LandingPage/LandingPage';
 import TeaClippingList from './TeaClippingList/TeaClippingList';
 import TeaDiscovery from './TeaDiscovery/TeaDiscovery';
-import TeaClippingsDatabase from './TeaClippingsTestingDatabase'
+import TeaClippingsDatabase from './TeaClippingsTestingDatabase';
 import AddTeaClipping from './AddTeaClipping/AddTeaClipping';
 import EditTeaClipping from './EditTeaClipping/EditTeaClipping';
 import TeaDefinition from './TeaDefinition/TeaDefinition';
@@ -41,49 +41,49 @@ class App extends Component {
     this.setState({
       teaClippings: teaClippings,
       error: null,
-    })
+    });
     localStorage.setItem('teaClippings', JSON.stringify(teaClippings))
-  }
+  };
 
   setCaffeineSelection = caffeineTypeSelected => {
     this.setState({
       caffeineTypeSelected: caffeineTypeSelected
-    })
-  }
+    });
+  };
   
   setTeaTypeSelection = teaTypeSelected => {
     this.setState({
       teaTypeSelected: teaTypeSelected,
-    })
-  }
+    });
+  };
 
   setTasteTypeSelection = tasteTypeSelected => {
     this.setState({
       tasteTypeSelected: tasteTypeSelected,
-    })
-  }
+    });
+  };
 
   setTeaSelected = teaSelected => {
     this.setState({
       teaSelected: teaSelected,
-    })
+    });
     localStorage.setItem('teaSelected', teaSelected)
-  }
+  };
 
   addTeaClipping = teaClipping => {
     this.setState({
       teaClippings: [ ...this.state.teaClippings, teaClipping ],
-    })
-  }
+    });
+  };
 
   deleteTeaClipping = teaClippingId => {
     const newTeaClippings = this.state.teaClippings.filter(record =>
       record.id !== teaClippingId
-    )
+    );
     this.setState({
       teaClippings: newTeaClippings
-    })
-  }
+    });
+  };
 
 
 //  This API call happens when our app first loads, grabbing us all the data we need. 
@@ -105,8 +105,8 @@ class App extends Component {
       .catch(error => {
         console.error(error)
         this.setState({ error })
-      })
-  }
+      });
+  };
 
 
 
@@ -115,8 +115,8 @@ class App extends Component {
       teaClippings: this.state.teaClippings.map(record =>
         (record.id !== updatedTeaClipping.id) ? record : updatedTeaClipping
       )
-    })
-  }
+    });
+  };
 
 
   //This section sets the value for context, calling in functions that allow context to be 
@@ -137,7 +137,7 @@ class App extends Component {
       setTasteTypeSelection: this.setTasteTypeSelection,
       setTeaClippings: this.setTeaClippings,
       setTeaSelected: this.setTeaSelected
-    }
+    };
     return (
       <main className='App'>
         <TeaClippingsContext.Provider value={contextValue}>
@@ -163,7 +163,7 @@ class App extends Component {
         </TeaClippingsContext.Provider>
       </main>
     );
-  }
-}
+  };
+};
 
 export default App;

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import TeaClippingsContext from '../TeaClippingsContext';
 import TeaClippingItem from '../TeaClippingItem/TeaClippingItem';
-import './TeaClippingList.css'
+import './TeaClippingList.css';
 
 //This presents a list of the records available in the Mr. TeeSeaks archive. 
 class TeaClippingList extends Component {
@@ -40,7 +40,7 @@ class TeaClippingList extends Component {
         </ul>
       </section>
     );
-  }
-}
+  };
+};
 
 export default TeaClippingList;

@@ -1,7 +1,7 @@
 import React, { Component } from  'react';
 import PropTypes from 'prop-types';
 import TeaClippingsContext from '../TeaClippingsContext';
-import config from '../config'
+import config from '../config';
 import './AddTeaClipping.css';
 
 const Required = () => (
@@ -68,7 +68,7 @@ class AddTeaClipping extends Component {
         console.error(error)
         this.setState({ error })
       })
-  }
+  };
 
   //This function handles what happens when a user clicks cancel on the form.
   handleClickCancel = () => {

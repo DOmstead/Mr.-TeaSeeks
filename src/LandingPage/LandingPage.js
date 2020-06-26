@@ -3,15 +3,10 @@ import { Link } from 'react-router-dom';
 import { render } from 'react-dom';
 import './LandingPage.css';
 import Carousel from 'react-image-carousel';
-import matcha_holidays from '../Images/matcha_holidays.jpg'
-import light_tea_with_milk from '../Images/light_tea_with_milk.jpg'
-import phoenix_rising_tea from '../Images/phoenix_rising_tea.jpg'
-import blue_wave_castiron_kettle from '../Images/blue_wave_castiron_kettle.jpg'
-import black_tea_leaf_landscape from '../Images/black_tea_leaf_landscape.jpg'
-import huron_gold_needle from '../Images/huron_gold_needle.jpg'
-import matcha_wisk_with_water from '../Images/matcha_wisk_with_water.jpg'
-import  '../../node_modules/react-image-carousel/lib/css/main.min.css'
-
+import black_tea_leaf_landscape from '../Images/black_tea_leaf_landscape.jpg';
+import huron_gold_needle from '../Images/huron_gold_needle.jpg';
+import matcha_wisk_with_water from '../Images/matcha_wisk_with_water.jpg';
+import  '../../node_modules/react-image-carousel/lib/css/main.min.css';
 
 
 // This component is the first thing a user sees when they go to this app. 
@@ -24,7 +19,7 @@ images = [
   black_tea_leaf_landscape,
   huron_gold_needle,
   matcha_wisk_with_water,
-]   
+];   
 
 render() {
   return (
@@ -43,7 +38,7 @@ render() {
           <div>
             <p className = "intro">
               Mr. TeaSeeks is an app for tea lovers everywhere. 
-              With hundreds of thosands of different teas across the globe to choose from, there is no reason we should be stuck drinking the same old green. 
+              With hundreds of thousands of different teas across the globe to choose from, there is no reason we should be stuck drinking the same old green. 
               Simply make a few easy choices on what you're looking for, and Mr. TeaSeeks will scour the globe to find the right tea for you.    
             </p>
           </div>
@@ -52,7 +47,7 @@ render() {
           </Link>
       </section>
   );
-}
-}
+};
+};
 
 export default LandingPage

@@ -27,7 +27,7 @@ function deleteTeaClippingRequest(teaClippingId, cb) {
     .catch(error => {
       console.error(error)
     })
-}
+};
 
 //This section handles what renders for the end user.
 export default function TeaClippingItem(props) {
@@ -61,11 +61,11 @@ export default function TeaClippingItem(props) {
       )}
     </TeaClippingsContext.Consumer>
   )
-}
+};
 
 TeaClippingItem.defaultProps = {
   onClickDelete: () => {},
-}
+};
 
 //This sets the relevant proptypes and requires the neccessary pieces. 
 TeaClippingItem.propTypes = {
@@ -82,4 +82,4 @@ TeaClippingItem.propTypes = {
   brew_time: PropTypes.string,
   image: PropTypes.string,
   onClickDelete: PropTypes.func,
-}
+};

@@ -1,7 +1,7 @@
 import React, { Component } from  'react';
 import PropTypes from 'prop-types';
 import TeaClippingsContext from '../TeaClippingsContext';
-import config from '../config'
+import config from '../config';
 import './EditTeaClipping.css';
 
 const Required = () => (
@@ -65,7 +65,7 @@ class EditTeaClipping extends Component {
       .catch(error => {
         this.setState({ error })
       })
-  }
+  };
 
 
   //This series of functions target specific pieces of data and call the setState 
@@ -130,7 +130,7 @@ class EditTeaClipping extends Component {
         console.error(error)
         this.setState({ error })
       })
-  }
+  };
 
 
   //Want fields full of text even after you submit? No? Neither do our users. This function takes care of that. 
@@ -145,7 +145,7 @@ class EditTeaClipping extends Component {
           brew_time: blank.value || '',
           image: blank.value || '',
     })
-  }
+  };
 
   //When the user hits cancel this function runs.
   handleClickCancel = () => {
