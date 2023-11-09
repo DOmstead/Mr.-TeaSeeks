@@ -2,6 +2,6 @@
 //in our code for security.
 
 export default {
-  API_ENDPOINT: `https://afternoon-scrubland-07707.herokuapp.com/api/teaclippings`,
+  API_ENDPOINT: `https://mr-tea-seeks.onrender.com/api/teaclippings`,
   API_KEY: process.env.REACT_APP_API_KEY,
 };
